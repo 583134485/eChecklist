@@ -1,0 +1,5 @@
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.dll
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.pdb
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csproj.CoreCompileInputs.cache
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.dll
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.pdb
