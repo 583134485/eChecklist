@@ -56,6 +56,9 @@
     <Reference Include="SimpleInjector.Integration.WebApi, Version=4.1.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.Integration.WebApi.4.1.0\lib\net45\SimpleInjector.Integration.WebApi.dll</HintPath>
     </Reference>
+    <Reference Include="StyleCop, Version=5.0.0.0, Culture=neutral, PublicKeyToken=f904653c63bc2738, processorArchitecture=MSIL">
+      <HintPath>..\packages\StyleCop.5.0.0\lib\net40\StyleCop.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />

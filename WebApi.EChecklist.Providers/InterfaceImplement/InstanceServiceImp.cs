@@ -13,6 +13,7 @@
     public class InstanceServiceImp : IInstanceService
     {
         private IInstanceDao instancedao;
+        private ITemplateDao templateDao;
         private const string SUCCESS = "01";
         private const string FAILTURE = "00";
 
@@ -21,9 +22,10 @@
         // {
         //    instancedao = new InstanceDaoImpl();
         // }
-        public InstanceServiceImp(IInstanceDao instanceDao)
+        public InstanceServiceImp(IInstanceDao instanceDao,ITemplateDao templateDao)
         {
             this.instancedao = instanceDao;
+            this.templateDao = templateDao;
         }
 
         public InstanceView GetAllInstance()
@@ -54,6 +56,8 @@
             return instanceView;
         }
 
+        //instance must be created by a exist template ,
+        //so we should find a template firstly
         public InstanceView InsertInstance(Instance instance)
         {
             InstanceView instanceView = new InstanceView();
@@ -69,8 +73,19 @@
                instanceView.instance.Add(instance);
            }
            */
-
-            bool result = this.instancedao.CreateInstance(instance);
+            bool result;
+            Template template = this.templateDao.GetOneTemplate(instance.Name,instance.Type);
+            if (template==null)
+            {
+                result = false;
+            }
+            else
+            {
+                instance.Template = template.Name;
+                instance.Type = template.Type;
+                result = this.instancedao.CreateInstance(instance);
+            }
+                
 
             // Console.Write();
             if (result)
