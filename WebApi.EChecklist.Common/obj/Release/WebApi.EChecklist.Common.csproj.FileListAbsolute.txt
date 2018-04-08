@@ -1,0 +1,9 @@
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\bin\Release\WebApi.EChecklist.Common.dll
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\bin\Release\WebApi.EChecklist.Common.pdb
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Release\WebApi.EChecklist.Common.csproj.CoreCompileInputs.cache
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Release\WebApi.EChecklist.Common.dll
+E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Release\WebApi.EChecklist.Common.pdb
+E:\4.8git\eChecklist\WebApi.EChecklist.Common\bin\Release\WebApi.EChecklist.Common.dll
+E:\4.8git\eChecklist\WebApi.EChecklist.Common\bin\Release\WebApi.EChecklist.Common.pdb
+E:\4.8git\eChecklist\WebApi.EChecklist.Common\obj\Release\WebApi.EChecklist.Common.dll
+E:\4.8git\eChecklist\WebApi.EChecklist.Common\obj\Release\WebApi.EChecklist.Common.pdb

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EDF4429-251A-416D-BB68-93F227191BCF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApi.EChecklist.Test</RootNamespace>
+    <AssemblyName>WebApi.EChecklist.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.Contrib.0.3\lib\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq.Contrib, Version=0.1.3802.36788, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.Contrib.0.3\lib\Moq.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InterfaceImplement\InstanceServiceTest.cs" />
+    <Compile Include="InterfaceImplement\TemplateServiceTests.cs" />
+    <Compile Include="TestClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.EChecklist.Common\WebApi.EChecklist.Common.csproj">
+      <Project>{bc13c094-55a9-4e95-b8e2-056471df3cd5}</Project>
+      <Name>WebApi.EChecklist.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi.EChecklist.Models\WebApi.EChecklist.Models.csproj">
+      <Project>{8d5845f8-3e50-4bc0-990f-e8a448d30f22}</Project>
+      <Name>WebApi.EChecklist.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi.EChecklist.Providers\WebApi.EChecklist.Providers.csproj">
+      <Project>{7E3F2298-47F2-4FE0-B9B5-BA9AAE2E2F18}</Project>
+      <Name>WebApi.EChecklist.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi.EChecklist.Repositories\WebApi.EChecklist.Repositories.csproj">
+      <Project>{2255c992-da8f-4970-ab4c-e32820edeb52}</Project>
+      <Name>WebApi.EChecklist.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi.EChecklist.Web\WebApi.EChecklist.Web.csproj">
+      <Project>{75b3832f-6c80-4883-b8a8-bad8fb9552a6}</Project>
+      <Name>WebApi.EChecklist.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

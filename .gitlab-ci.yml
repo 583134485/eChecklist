@@ -1,0 +1,18 @@
+stages:
+    - build
+    - test
+service-build:
+    tags:
+        - dev-service
+    stage: build
+    script:
+        - cd C:\CI-total
+        - dir
+        - service-build.bat
+service-test:
+    tags:
+        - dev-service
+    stage: test
+    script:
+        - cd C:\CI-total
+        - service-test.bat

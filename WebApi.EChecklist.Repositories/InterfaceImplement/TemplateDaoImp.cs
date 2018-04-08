@@ -28,7 +28,7 @@ namespace WebApi.EChecklist.Repositories.InterfaceImplement
 
         public List<Template> GetAllTemplate()
         {
-            return this.db.GetCollection<Template>(Collection).Find(_ => true).ToEnumerable().ToList();
+            return this.db.GetCollection<Template>(Collection).Find(_ => true).ToEnumerable().Reverse().ToList();
         }
 
         public Template GetOneTemplate(string name, string type)

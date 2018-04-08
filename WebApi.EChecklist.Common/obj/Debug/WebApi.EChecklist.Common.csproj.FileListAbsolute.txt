@@ -3,3 +3,15 @@ E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklis
 E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csproj.CoreCompileInputs.cache
 E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.dll
 E:\4.4\WebApi.EChecklist.Web\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.pdb
+E:\4.8\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.dll
+E:\4.8\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.pdb
+E:\4.8\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csprojResolveAssemblyReference.cache
+E:\4.8\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csproj.CoreCompileInputs.cache
+E:\4.8\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.dll
+E:\4.8\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.pdb
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.dll
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\bin\Debug\WebApi.EChecklist.Common.pdb
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csprojResolveAssemblyReference.cache
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.csproj.CoreCompileInputs.cache
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.dll
+C:\Users\bill.guo\source\repos\eChecklist\WebApi.EChecklist.Common\obj\Debug\WebApi.EChecklist.Common.pdb

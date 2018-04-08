@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Persistence", "5-Persiste
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Common", "6-Common", "{5418E8D6-2791-4CE5-A674-C5B83DCED3E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.EChecklist.Test", "WebApi.EChecklist.Test\WebApi.EChecklist.Test.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{BC13C094-55A9-4E95-B8E2-056471DF3CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC13C094-55A9-4E95-B8E2-056471DF3CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC13C094-55A9-4E95-B8E2-056471DF3CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{8D5845F8-3E50-4BC0-990F-E8A448D30F22} = {FCE18055-78B8-480A-9854-66B4076E5E5C}
 		{2255C992-DA8F-4970-AB4C-E32820EDEB52} = {85306700-E17B-45FD-95E7-548ED2E71BC6}
 		{BC13C094-55A9-4E95-B8E2-056471DF3CD5} = {5418E8D6-2791-4CE5-A674-C5B83DCED3E3}
+		{8EDF4429-251A-416D-BB68-93F227191BCF} = {7952B7AD-1B44-4C39-8ECD-3EEDB7284F73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F54DE268-8AD5-403C-BDB5-6F1AEF303169}

@@ -25,11 +25,11 @@ namespace WebApi.EChecklist.Web
             container.Options.DefaultScopedLifestyle = new AsyncScopedLifestyle();
 
             // Register your types, for instance using the scoped lifestyle:
-            container.Register<IInstanceService, InstanceServiceImp>(Lifestyle.Scoped);
-            container.Register<ITemplateService, IInstanceDaoImp>(Lifestyle.Scoped);
+            container.Register<IInstanceService, InstanceServiceImp>(Lifestyle.Transient);
+            container.Register<ITemplateService, TemplateServiceImp>(Lifestyle.Transient);
 
-            container.Register<IInstanceDao, InstanceDaoImp>(Lifestyle.Scoped);
-            container.Register<ITemplateDao, TemplateDaoImp>(Lifestyle.Scoped);
+            container.Register<IInstanceDao, InstanceDaoImp>(Lifestyle.Singleton);
+            container.Register<ITemplateDao, TemplateDaoImp>(Lifestyle.Singleton);
 
             // This is an extension method from the integration package.
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);

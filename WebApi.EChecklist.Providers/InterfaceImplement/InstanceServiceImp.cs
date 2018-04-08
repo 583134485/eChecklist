@@ -9,6 +9,7 @@
     using WebApi.EChecklist.Models.ViewModels;
     using WebApi.EChecklist.Providers.Interface;
     using WebApi.EChecklist.Repositories.Interface;
+    using WebApi.EChecklist.Repositories.InterfaceImplement;
 
     public class InstanceServiceImp : IInstanceService
     {
@@ -56,8 +57,6 @@
             return instanceView;
         }
 
-        //instance must be created by a exist template ,
-        //so we should find a template firstly
         public InstanceView InsertInstance(Instance instance)
         {
             InstanceView instanceView = new InstanceView();
@@ -73,20 +72,26 @@
                instanceView.instance.Add(instance);
            }
            */
-            bool result;
-            Template template = this.templateDao.GetOneTemplate(instance.Name,instance.Type);
-            if (template==null)
+            bool result=false;
+            Template template = null;
+             template =this.templateDao.GetOneTemplate(instance.Template, instance.Type);
+            if (template==null||String.IsNullOrEmpty(template.Name))
             {
                 result = false;
             }
             else
             {
-                instance.Template = template.Name;
-                instance.Type = template.Type;
-                result = this.instancedao.CreateInstance(instance);
-            }
+                result = true;
+                Instance instancedata = new Instance();
+                instancedata.Name = instance.Name;
+                instancedata.Template = template.Name;
+                instancedata.Type = template.Type;
+                //instance.Template = template.Name;
+                //instance.Type = template.Type;
+                result = this.instancedao.CreateInstance(instancedata);
                 
 
+            }
             // Console.Write();
             if (result)
             {

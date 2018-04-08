@@ -34,7 +34,7 @@
 
         public List<Instance> GetAllInstance()
         {
-            return this.db.GetCollection<Instance>(Collection).Find(_ => true).ToEnumerable().ToList();
+            return this.db.GetCollection<Instance>(Collection).Find(_ => true).ToEnumerable().Reverse().ToList();
         }
 
         public Instance GetOneInstance(string name, string type)

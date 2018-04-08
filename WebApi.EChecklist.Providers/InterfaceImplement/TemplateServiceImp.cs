@@ -6,7 +6,7 @@
     using WebApi.EChecklist.Providers.Interface;
     using WebApi.EChecklist.Repositories.Interface;
 
-    public class IInstanceDaoImp : ITemplateService
+    public class TemplateServiceImp : ITemplateService
     {
         private ITemplateDao templatedao;
         private const string SUCCESS = "01";
@@ -16,7 +16,7 @@
         // {
         //    templatedao = new TemplateDaoImpl();
         // }
-        public IInstanceDaoImp(ITemplateDao templatedao)
+        public TemplateServiceImp(ITemplateDao templatedao)
         {
             this.templatedao = templatedao;
         }
