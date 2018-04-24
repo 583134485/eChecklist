@@ -1,0 +1,46 @@
+Status: UNKNOWN
+Time Taken: 69
+Size: 31
+Timestamp: Wed Apr 11 10:05:15 CST 2018
+TestStep: instance-addone
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: POST
+HTTP Version: HTTP/1.1
+Endpoint: http://10.2.1.121:8098
+URL: http://10.2.1.121:8098/api/instance/addone
+
+---------------- Request ---------------------------
+Host: [10.2.1.121:8098]
+Content-Length: [49]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST http://10.2.1.121:8098/api/instance/addone HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 49
+Host: 10.2.1.121:8098
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+X-AspNet-Version: [4.0.30319]
+Date: [Wed, 11 Apr 2018 02:05:13 GMT]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [31]
+Expires: [-1]
+Content-Type: [application/json; charset=utf-8]
+X-Powered-By: [ASP.NET]
+Server: [Microsoft-IIS/10.0]
+Pragma: [no-cache]
+Cache-Control: [no-cache]
+
+{"StatusCode":"02","Data":null}
